@@ -13,3 +13,7 @@ h2 {
 ul {
     list-style: square inside;
 }
+
+ol li {
+    list-style: trad-chinese-informal inside;
+}
