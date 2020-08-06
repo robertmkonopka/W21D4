@@ -17,3 +17,7 @@ ul {
 ol li {
     list-style: trad-chinese-informal inside;
 }
+
+header > img {
+    width: 100px;
+}
