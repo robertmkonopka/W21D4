@@ -61,7 +61,10 @@ describe Dessert do
   end
 
   describe "#serve" do
-    it "contains the titleized version of the chef's name"
+    it "contains the titleized version of the chef's name" do
+      allow(chef).to receive(:titleize).and_return("Chef Jason the Great Baker")
+      expect(cookie.serve).to eq("Chef Jason the Great Baker has made 50 cookies!")
+    end
   end
 
   describe "#make_more" do
