@@ -21,3 +21,11 @@ ol li {
 header > img {
     width: 100px;
 }
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: inherit;
+}
