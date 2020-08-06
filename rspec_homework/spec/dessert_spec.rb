@@ -28,7 +28,9 @@ describe Dessert do
   end
 
   describe "#add_ingredient" do
-    it "adds an ingredient to the ingredients array"
+    it "adds an ingredient to the ingredients array" do
+      expect(cookie.add_ingredient("butter")).to eq(["butter"])
+    end
   end
 
   describe "#mix!" do
