@@ -68,6 +68,9 @@ describe Dessert do
   end
 
   describe "#make_more" do
-    it "calls bake on the dessert's chef with the dessert passed in"
+    it "calls bake on the dessert's chef with the dessert passed in" do 
+      allow(chef).to receive(:bake).with(cookie)
+      cookie.make_more
+    end
   end
 end
